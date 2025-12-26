@@ -37,8 +37,6 @@ services:
   - type: web
     name: vtfx-client
     env: static
-    region: frankfurt
-    plan: free
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: ./client/dist
     envVars:
