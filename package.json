@@ -1,0 +1,37 @@
+{
+  "name": "vtfx",
+  "version": "1.0.0",
+  "description": "VTfx - Enterprise Trading Education & Signal Platform",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "seed": "cd server && npm run seed",
+    "lint": "cd client && npm run lint && cd ../server && npm run lint"
+  },
+  "keywords": [
+    "trading",
+    "education",
+    "signals",
+    "mern",
+    "paystack"
+  ],
+  "author": "VTfx Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "ioredis": "^5.8.2"
+  }
+}
