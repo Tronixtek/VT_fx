@@ -67,8 +67,23 @@ app.use(helmet({
   crossOriginResourcePolicy: false, // Disable CORP to allow cross-origin resources
   crossOriginEmbedderPolicy: false, // Disable COEP to allow cross-origin embedding
 }));
+
+// CORS configuration - allow CLIENT_URL from environment + local development URLs
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:3000',
+  'http://localhost:5174',
+  'http://127.0.0.1:5173',
+  'http://127.0.0.1:3000'
+];
+
+// Add CLIENT_URL from environment if it exists
+if (process.env.CLIENT_URL) {
+  allowedOrigins.push(process.env.CLIENT_URL);
+}
+
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:5174', 'http://127.0.0.1:5173', 'http://127.0.0.1:3000'],
+  origin: allowedOrigins,
   credentials: true,
   exposedHeaders: ['Content-Range', 'Accept-Ranges', 'Content-Length'],
 }));
