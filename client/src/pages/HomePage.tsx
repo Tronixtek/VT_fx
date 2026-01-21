@@ -58,6 +58,25 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Affiliate Banner */}
+      <section className="py-8 sm:py-12 px-4 sm:px-6 bg-gray-50">
+        <div className="container mx-auto text-center">
+          <a 
+            href="https://deriv.partners/rx?sidc=C13CB916-CFD6-43C2-B467-60A54DFA3077&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU253171" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <img 
+              src="https://deriv.partners/assets/image/imageoriginal/PPC_MT5_1080x1080.png" 
+              alt="Deriv MT5 Trading Platform"
+              className="max-w-full h-auto mx-auto rounded-lg shadow-lg"
+              style={{ maxWidth: '600px', width: '100%', border: '0px' }}
+            />
+          </a>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-primary text-white py-12 sm:py-16 px-4 sm:px-6">
         <div className="container mx-auto text-center">

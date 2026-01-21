@@ -32,6 +32,7 @@
     "concurrently": "^8.2.2"
   },
   "dependencies": {
-    "ioredis": "^5.8.2"
+    "ioredis": "^5.8.2",
+    "mongodb": "^7.0.0"
   }
 }
