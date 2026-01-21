@@ -105,6 +105,20 @@ export default function DashboardLayout() {
               <span>{item.label}</span>
             </Link>
           ))}
+          
+          {/* Deriv Trading Link - Only show for regular users */}
+          {user?.role === 'user' && (
+            <a
+              href="https://deriv.partners/rx?sidc=C13CB916-CFD6-43C2-B467-60A54DFA3077&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU253171"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 transition mx-4 my-2 rounded-lg"
+            >
+              <TrendingUp size={20} />
+              <span className="font-semibold">Trade on Deriv</span>
+            </a>
+          )}
+          
           <button
             onClick={() => {
               handleLogout();

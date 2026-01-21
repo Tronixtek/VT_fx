@@ -72,6 +72,22 @@ export default function PricingPage() {
             ))}
           </div>
         )}
+
+        {/* Deriv Trading Platform CTA */}
+        <div className="mt-12 sm:mt-16 max-w-4xl mx-auto bg-gradient-to-r from-red-500 to-red-600 rounded-lg p-6 sm:p-8 text-center text-white">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Ready to Apply Your Knowledge?</h2>
+          <p className="text-base sm:text-lg mb-6 text-white/90">
+            Open a free trading account on Deriv and start trading with real market conditions
+          </p>
+          <a
+            href="https://deriv.partners/rx?sidc=C13CB916-CFD6-43C2-B467-60A54DFA3077&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU253171"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+          >
+            Open Free Deriv Account
+          </a>
+        </div>
       </div>
     </div>
   );

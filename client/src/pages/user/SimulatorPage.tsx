@@ -78,6 +78,20 @@ const SimulatorPage = () => {
           </div>
         </div>
 
+        {/* CTA - Practice on Real Platform */}
+        <div className="bg-gradient-to-r from-red-500 to-red-600 rounded-lg p-6 mb-6">
+          <h3 className="text-white text-xl font-bold mb-2">Ready to Trade on a Real Platform?</h3>
+          <p className="text-white/90 mb-4">Practice your strategies with Deriv's demo account while you wait</p>
+          <a
+            href="https://deriv.partners/rx?sidc=C13CB916-CFD6-43C2-B467-60A54DFA3077&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU253171"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+          >
+            Open Free Deriv Account
+          </a>
+        </div>
+
         {/* CTA */}
         <p className="text-gray-500">
           Stay tuned for updates. We'll notify you when the simulator goes live!

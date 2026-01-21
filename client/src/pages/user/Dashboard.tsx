@@ -70,14 +70,14 @@ export default function UserDashboard() {
         </Link>
 
         <a
-          href={import.meta.env.VITE_DERIV_URL || '#'}
+          href="https://deriv.partners/rx?sidc=C13CB916-CFD6-43C2-B467-60A54DFA3077&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU253171"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white rounded-lg shadow p-5 sm:p-6 hover:shadow-lg transition"
+          className="bg-gradient-to-br from-red-500 to-red-600 text-white rounded-lg shadow p-5 sm:p-6 hover:shadow-lg transition"
         >
-          <Calendar size={40} className="text-primary mb-3 sm:mb-4 sm:w-12 sm:h-12" />
-          <h3 className="text-lg sm:text-xl font-bold">Trade on Deriv</h3>
-          <p className="text-gray-600 text-xs sm:text-sm mt-2">Start trading now</p>
+          <TrendingUp size={40} className="mb-3 sm:mb-4 sm:w-12 sm:h-12" />
+          <h3 className="text-lg sm:text-xl font-bold">Start Trading on Deriv</h3>
+          <p className="text-white/90 text-xs sm:text-sm mt-2">Open a live trading account</p>
         </a>
       </div>
     </div>
