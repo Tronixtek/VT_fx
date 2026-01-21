@@ -28,7 +28,7 @@ export default function PricingPage() {
 
   const features = {
     basic: ['Trading Signals', 'Basic Courses', 'Community Access'],
-    pro: ['All Basic Features', 'Advanced Courses', 'Priority Support', '1 Mentorship/Month'],
+    pro: ['All Basic Features', 'Advanced Courses', 'Priority Support', '1 on 1 Mentorship Sessions'],
     premium: ['All Pro Features', 'VIP Signals', 'Unlimited Mentorship', 'Exclusive Content'],
   };
 
